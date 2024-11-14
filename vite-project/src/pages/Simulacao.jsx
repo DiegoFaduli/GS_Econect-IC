@@ -1,7 +1,7 @@
 export default function Simulacao() {
-    return(
-        <>
-            <h1>Simulacao</h1>
-        </>
-    )
+  return(
+      <>
+          <h1>Simulacao</h1>
+      </>
+  )
 }
