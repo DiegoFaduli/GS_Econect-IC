@@ -1,9 +1,14 @@
 import Econect from '../../public/Image/Econect-sem-fundo.png';
 import { Link } from 'react-router-dom';
 
+import Instagram from '../../public/Image/insta.png'
+import Facebook from '../../public/Image/facebook.png'
+import Linkedin from '../../public/Image/linkedin.png'
+import YouTube from '../../public/Image/yt.png'
+
 export default function Footer() {
     return (
-        <footer className="bg-zinc-950 text-white pt-24">
+        <footer className="bg-[#222222] text-white pt-24">
             <div className="max-w-6xl mx-auto px-4 py-24 grid grid-cols-1 md:grid-cols-4 gap-4 text-center md:text-left">
                 <div className="flex flex-col items-center md:items-start space-y-1">
                     <img src={Econect} alt="Econnect Logo" className="w-48 mb-1" />
@@ -30,10 +35,10 @@ export default function Footer() {
                 <div>
                     <h3 className="text-lg mb-11">Nos siga</h3>
                     <div className="flex gap-2 justify-center md:justify-start">
-                        <a href=""><img src="" alt="Facebook" className="w-6" /></a>
-                        <a href=""><img src="" alt="Vimeo" className="w-6" /></a>
-                        <a href=""><img src="" alt="YouTube" className="w-6" /></a>
-                        <a href=""><img src="" alt="Instagram" className="w-6" /></a>
+                        <a href=""><img src={Facebook} alt="Facebook" className="w-6" /></a>
+                        <a href=""><img src={YouTube} alt="YouTube" className="w-6" /></a>
+                        <a href=""><img src={Linkedin} alt="Linkedin" className="w-6" /></a>
+                        <a href=""><img src={Instagram} alt="Instagram" className="w-6" /></a>
                     </div>
                 </div>
             </div>
