@@ -8,6 +8,8 @@ import Sobre from './pages/Sobre.jsx'
 import Simulacao from './pages/Simulacao.jsx'
 import Servicos from './pages/Servicos.jsx'
 import Contato from './pages/Contato.jsx'
+import Topicos from './Components/Topicos.jsx'
+import Conhecimento from './Components/Conhecimento.jsx'
 
 const router = createBrowserRouter([
   {
@@ -23,7 +25,10 @@ const router = createBrowserRouter([
       },
       {
         path: "/sobre",
-        element: <Sobre />
+        element: <Sobre 
+          texto="A Econect é uma empresa voltada a afiliações a outras empresas de sustentabilidade em geral. Oferecemos aos nossos clientes a oportunidade de conhecer mais sobre assuntos sustentáveis como produção de energia limpa, questões sobre o aquecimento global, entre outros temas. Temos também nossa simulação de gasto com base na quantidade de energia consumida pelo cliente, onde a nossa IA gera automaticamente o valor a pagar. Nossas atividades incluem, além de afiliações com empresas, soluções residenciais e programas institucionais destinados a apoiar famílias necessitadas."
+          imagem="../../public/Image/Img-sobre-nos.jpg"
+        />
       },
       {
         path: "/simulacao",
@@ -36,6 +41,14 @@ const router = createBrowserRouter([
       {
         path: "/contato",
         element: <Contato />
+      },
+      {
+        path:"/topicos",
+        element: <Topicos />
+      },
+      {
+        path:"/:id",
+        element: <Conhecimento />
       }
     ]
   }
